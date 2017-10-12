@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!--this next bunch is from bootstrap.com. use it in head-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- much of what you're adding here are bootstrap instructions-->
+    <!-- they are all listed on bootstrap.com - components-->
+    <!-- the primary way of laying out content is the grid (walkthrough below)-->
+
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--<p class="btn-primary">Hello, World!</p>
+    <br />
+    <button class="btn-primary">This is a real button.</button>
+    <br/>
+    <button class="btn btn-primary">This is a real button.</button>
+    <p></p>
+    <p></p>-->
+    <!-- let's say we want 4 equally sized columns-->
+    <!-- diff content on each column-->
+
+    <div class="container">
+        <!--container is a bootstrap class. bootstrap will fetch its details.-->
+        <!--Note our style sheet override bootstrap's templates when named the same, in whole or in part.-->
+
+        <!--each block group of 4 blocks will organize different based on screen size, 
+            and in accordance with what you want-->
+
+        <div class="row">
+
+            <div class="col-md-3 col-lg-9 col-sm-6 col-xs-12">
+                <!--means column, medium (screen size), three units wide, etc.-->
+
+                <div class="customDiv">Col 1</div>
+            </div> <!--customDiv is NOT a bootstrap class. we'll make it.-->
+
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+
+                <div class="customDiv">Col 2</div>
+            </div>
+
+            <div class="col-md-3 col-lg-9 col-sm-6 col-xs-12">
+
+                <div class="customDiv">Col 3</div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+
+                <div class="customDiv">Col 4</div>
+            </div>
+
+            <!--that md/lg/sm/xs stuff will adjust for different size screens-->
+            <!--the screen size is always 12 units across-->
+
+            <!--good practice: put all 4 sizes in all the time-->
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
